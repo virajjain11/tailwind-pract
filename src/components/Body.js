@@ -1,4 +1,5 @@
 import React from 'react';
+import FeaturesTab from './FeaturesTab';
 
 export default function Body() {
   return (
@@ -15,25 +16,11 @@ export default function Body() {
       <div className="flex justify-center lg:flex-row lg:w-10/12 text-white mx-auto  flex-col w-full ">
         <div className="lg:w-2/4  w-full bg-gray-700 mx-5 rounded-xl">
           <div className="">
-            <div className="flex mt-3 justify-between">
-              <div className="flex w-2/4  bg-neutral-800 justify-start p-2 rounded-xl m-2">
-                <img src="./img/time.svg" alt="" className="mr-3" />
-                <div className="text">3 Hours</div>
-              </div>
-              <div className="flex w-2/4  bg-neutral-800 justify-start p-2 rounded-xl m-2">
-                <img src="./img/session.svg" alt="" className="mr-3" />
-                <div className="text">Live Session</div>
-              </div>
-            </div>
-            <div className="flex justify-between">
-              <div className="flex w-2/4  bg-neutral-800 justify-start p-2 rounded-xl m-2">
-                <img className="mr-3" src="./img/calendar.svg" alt="" />
-                <div className="text">30 Mar 2021</div>
-              </div>
-              <div className="flex w-2/4  bg-neutral-800 justify-start p-2 rounded-xl m-2">
-                <img src="./img/hour.svg" alt="" className="mr-3" />
-                <div className="text">7 to 11 AM</div>
-              </div>
+            <div className="p-3 grid grid-cols-2 gap-x-2 gap-y-2">
+              <FeaturesTab image={'./img/time.svg'} text={'3 Hours'} />
+              <FeaturesTab image={'./img/session.svg'} text={'Live Session'} />
+              <FeaturesTab image={'./img/calendar.svg'} text={'30 Mar 2021'} />
+              <FeaturesTab image={'./img/hour.svg'} text={'7 to 11 AM'} />
             </div>
           </div>
           <div className="flex lg:flex-row flex-col md:flex-col ">
