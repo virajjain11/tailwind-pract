@@ -1,13 +1,16 @@
 import FeaturesTab from './FeaturesTab';
+import content from './Content';
 
 const Features = () => {
   return (
     <div className="lg:w-2/4  w-full bg-gray-700 mx-5 rounded-xl flex flex-col overflow-hidden">
       <div className=" p-3 grid grid-cols-2 gap-x-2 gap-y-2">
-        <FeaturesTab image={'./img/time.svg'} text={'3 Hours'} />
+        {/* <FeaturesTab image={'./img/time.svg'} text={'3 Hours'} />
         <FeaturesTab image={'./img/session.svg'} text={'Live Session'} />
         <FeaturesTab image={'./img/calendar.svg'} text={'30 Mar 2021'} />
-        <FeaturesTab image={'./img/hour.svg'} text={'7 to 11 AM'} />
+        <FeaturesTab image={'./img/hour.svg'} text={'7 to 11 AM'} /> */}
+
+        {content.map(value => (<FeaturesTab image={'./ img / value.image'} text={value.text} />))}
       </div>
       {/* <div className="flex lg:flex-row flex-col md:flex-col "> */}
       <div className="flex-1 flex pr-3">
